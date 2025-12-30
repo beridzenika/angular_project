@@ -1,0 +1,10 @@
+// abstracts
+@use '../scss/abstracts/variables' as *;
+@use '../scss/abstracts/mixins' as *;
+@use '../scss/abstracts/font' as *;
+
+main {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
