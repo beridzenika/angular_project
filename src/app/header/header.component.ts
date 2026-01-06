@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import {LOGO_URL} from '../resurces';
 
 @Component ({
     selector: 'app-header',
@@ -7,4 +8,6 @@ import { Component } from "@angular/core";
     standalone: true
 })
 
-export class HeaderComponent{}
+export class HeaderComponent{
+    LogoUrl = LOGO_URL;
+}

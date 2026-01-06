@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { DUMMY_TASKS } from './dummy_text';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { DYNAMIC_TYPE } from '@angular/compiler';
 
 @Component({
   selector: 'app-task',
@@ -8,5 +8,15 @@ import { DUMMY_TASKS } from './dummy_text';
   styleUrl: './task.component.scss',
 })
 export class TaskComponent {
-  task = DUMMY_TASKS[2];
+  @Input({required:true}) id!: number;
+  @Input({required:true}) title!: string;
+  @Input({required:true}) assignee!: string;
+  @Input({required:true}) status!: string;
+  @Input() description!: string;
+
+  @Output() select = new EventEmitter<{id:number, description: string}>();
+
+  OnClick () {
+    this.select.emit({id: this.id, description: this.description});
+  }
 }

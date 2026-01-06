@@ -1,10 +1,29 @@
 <app-header></app-header>
 <main>
-    <app-task></app-task>
-</main>
-<main>
-    <app-task></app-task>
-</main>
-<main>
-    <app-task></app-task>
+    <section></section>
+    <section>
+        <app-task [id]="tasks[0].id"
+                  [title]="tasks[0].title"
+                  [assignee]="tasks[0].assignee"
+                  [status]="tasks[0].status"
+                  [description]="tasks[0].description"
+                  (select)="OnSelectTask($event)" />
+
+        <app-task [id]="tasks[1].id"
+                  [title]="tasks[1].title"
+                  [assignee]="tasks[1].assignee"
+                  [status]="tasks[1].status"
+                  [description]="tasks[1].description"
+                  (select)="OnSelectTask($event)" />
+
+        <app-task [id]="tasks[2].id"
+                  [title]="tasks[2].title"
+                  [assignee]="tasks[2].assignee"
+                  [status]="tasks[2].status"
+                  [description]="tasks[2].description"
+                  (select)="OnSelectTask($event)" />
+    </section>
+    <section>
+        <app-desctext [description]="descText"/>
+    </section>
 </main>
