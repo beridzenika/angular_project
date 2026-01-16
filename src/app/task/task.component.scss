@@ -14,9 +14,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 10px;
-    :hover{
-        background-color: $active-light;
-    }
    .title {
         color: $dark-color;
         font-size: 20px;
@@ -43,6 +40,6 @@
         margin-right: 10px;
     }
 }
-.task.active{
+.task:hover, .task.active{
     background-color: $active-light;
 }

@@ -1,6 +1,16 @@
-# AngularProject
+# Angular To Do List Project
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+
+## Overeview
+
+This is simple to do list website, where you get dynamic task list. 
+
+on clicking each task you will see the description.
+
+## Screenshots
+
+![App Screenshot](screenshots/1.png)
 
 ## Development server
 
