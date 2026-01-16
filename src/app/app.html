@@ -2,28 +2,17 @@
 <main>
     <section></section>
     <section>
-        <app-task [id]="tasks[0].id"
-                  [title]="tasks[0].title"
-                  [assignee]="tasks[0].assignee"
-                  [status]="tasks[0].status"
-                  [description]="tasks[0].description"
+    @for (task of tasks; track task.id) {
+        <app-task [task]="task"
+                  [active]="task.id==SelectedText?.id"
                   (select)="OnSelectTask($event)" />
-
-        <app-task [id]="tasks[1].id"
-                  [title]="tasks[1].title"
-                  [assignee]="tasks[1].assignee"
-                  [status]="tasks[1].status"
-                  [description]="tasks[1].description"
-                  (select)="OnSelectTask($event)" />
-
-        <app-task [id]="tasks[2].id"
-                  [title]="tasks[2].title"
-                  [assignee]="tasks[2].assignee"
-                  [status]="tasks[2].status"
-                  [description]="tasks[2].description"
-                  (select)="OnSelectTask($event)" />
+    }
     </section>
-    <section>
-        <app-desctext [description]="descText"/>
+    <section class="description">
+    @if (SelectedText) {
+        <p>{{SelectedText.description}}</p>
+    } @else {
+        <p>Click any task to see more.</p>
+    }
     </section>
 </main>

@@ -7,4 +7,18 @@ main {
    display: flex;
    justify-content: center;
    margin-top: 20px;
+   
+   .description{
+    width: 300px;
+    height: 100%;
+    padding: 10px 20px;
+    background-color: $light-color;
+    font-family: $font-sans;
+    border-radius: 10px;
+    margin: 10px;
+    p{
+        color: #805333;
+        font-size: 20px;
+    }
+}
 }

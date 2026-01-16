@@ -15,12 +15,10 @@
    justify-content: space-between;
    margin: 10px;
    .title {
-        color: #805333;
+        color: $dark-color;
         font-size: 20px;
         margin-left: 40px;
     }
-
-
     .assignee {
         padding: 12px;
         color: white;
@@ -31,8 +29,6 @@
         justify-content: center;
         font-weight: 800;
     }
-
-
     .status {
         padding: 10px;
         background-color: $dark-color;
@@ -43,4 +39,7 @@
         border-radius: 10px;
         margin-right: 10px;
     }
+}
+.task.active{
+    background-color: $active-light;
 }
