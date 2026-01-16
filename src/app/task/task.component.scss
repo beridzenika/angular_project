@@ -3,17 +3,20 @@
 @use '../../scss/abstracts/font' as *;
 
 .task {
-   width: 600px;
-   padding: 10px 20px;
-   background-color: $light-color;
-   font-family: $font-sans;
-   cursor: pointer;
-   border-radius: 10px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   margin: 10px;
+    width: 600px;
+    padding: 10px 20px;
+    background-color: $light-color;
+    font-family: $font-sans;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    :hover{
+        background-color: $active-light;
+    }
    .title {
         color: $dark-color;
         font-size: 20px;
