@@ -5,5 +5,9 @@ export interface Task {
     title: string;
     assignee: string;
     status: Status;
-    description: string;
 };
+
+export interface TaskDetail extends Task{
+    description: string;
+    due: string;
+}

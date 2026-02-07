@@ -6,7 +6,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 This is simple to do list website, where you get dynamic task list. 
 
-on clicking each task you will see the description.
+on clicking each task, you will see the description.
 
 ## Screenshots
 

@@ -10,7 +10,7 @@
     </section>
     <section class="description">
     @if (SelectedText) {
-        <p>{{SelectedText.description}}</p>
+        <app-task-detail [taskDetail]="SelectedText"/>
     } @else {
         <p>Click any task to see more.</p>
     }
