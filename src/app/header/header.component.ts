@@ -5,7 +5,7 @@ import {LOGO_URL} from '../resurces';
     selector: 'app-header',
     templateUrl: "./header.component.html",
     styleUrl: "./header.component.scss",
-    standalone: true
+    standalone: false
 })
 
 export class HeaderComponent{

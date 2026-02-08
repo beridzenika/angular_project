@@ -1,18 +1,15 @@
 import { Component, signal } from '@angular/core';
-import { HeaderComponent } from "./header/header.component";
-import { TaskComponent } from "./task/task.component";
 import { DUMMY_TASKS } from './task/dummy_text';
 import { Task, TaskDetail } from './models/task.interface';
-import { TaskDetailComponent } from "./task-detail/task-detail";
 import { DUMMY_TASK_DETAILS } from './task-detail/dummy-task-detail';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, TaskComponent, TaskDetailComponent],
+  standalone: false,
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
+export class AppComponent {
   tasks: Task[] = DUMMY_TASKS;
   SelectedText: TaskDetail | null | undefined = null;
   OnSelectTask(id: number) {
