@@ -1,5 +1,8 @@
 <div class="task" [class.active]="active" (click)="OnClick()">
-   <li class="title">{{task.title}}</li>
+   <div class="list">
+      <img class="icon" [src]="statusIcon[task.status]" alt="">
+      <span class="title">{{task.title}}</span>
+   </div>
    <div class="assignee">{{task.assignee}}</div>
    <app-button>{{task.status}}</app-button>
 </div>

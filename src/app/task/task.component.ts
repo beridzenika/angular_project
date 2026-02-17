@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Task } from '../models/task.interface';
+import { Task, STATUS_ICON_MAP} from '../models/task.interface';
 import { ButtonComponent } from '../button/button.component';
 
 @Component({
@@ -11,6 +11,8 @@ import { ButtonComponent } from '../button/button.component';
 export class TaskComponent {
   @Input({required:true}) task!:Task;
   @Input({required:true}) active !: boolean;
+
+  statusIcon=STATUS_ICON_MAP;
 
   @Output() select = new EventEmitter<number>();
 
