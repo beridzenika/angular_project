@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Task } from '../models/task.interface';
+import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-task',
